@@ -44,7 +44,11 @@ h2.section-title { font-size: var(--fs-h2); }
   display: block; font-weight: 800; font-size: 0.78rem; letter-spacing: 0.1em;
   text-transform: uppercase; color: var(--bark); margin-bottom: 1rem;
 }
-.section--dark .eyebrow, .fixed-panel .eyebrow { color: var(--cutgrass); }
+.section--dark .eyebrow { color: var(--cutgrass); }
+/* Transparent panels sit directly over the green canopy photo, where
+   --cutgrass green text blended into the image in places — switched
+   to bark (warm brown) here since it reads against green foliage. */
+.fixed-panel .eyebrow { color: var(--bark); }
 
 .btn {
   display: inline-flex; align-items: center; gap: 0.5rem;
@@ -101,7 +105,7 @@ h2.section-title { font-size: var(--fs-h2); }
 
 /* ---------- Hero (over fixed canopy) ---------- */
 .hero { padding: 10rem 0 6rem; text-align: left; }
-.hero .eyebrow { color: var(--cutgrass); }
+.hero .eyebrow { color: var(--bark); }
 .hero h1 { font-size: clamp(2.6rem, 6vw, 4.6rem); max-width: 14ch; color: var(--clearing); }
 .hero__dek { max-width: 44ch; margin: 1.4rem 0 2rem; font-size: 1.12rem; color: var(--clearing); }
 .hero__actions { display: flex; flex-wrap: wrap; gap: 1rem; }
@@ -115,7 +119,7 @@ h2.section-title { font-size: var(--fs-h2); }
 
 .spec-list { margin-top: 1.6rem; display: grid; gap: 0.8rem; }
 .spec-list li { display: flex; gap: 0.7rem; align-items: baseline; font-weight: 700; }
-.spec-list li::before { content: '🌳'; font-size: 0.9rem; }
+.spec-list li::before { content: '›'; color: var(--bark); font-family: var(--font-display); font-size: 1.1rem; line-height: 1; }
 
 /* ---------- Services grid (secondary) ---------- */
 .services-grid { display: grid; gap: 1.4rem; grid-template-columns: 1fr; margin-top: 1rem; }
@@ -129,7 +133,7 @@ h2.section-title { font-size: var(--fs-h2); }
 @media (min-width: 780px) { .review-grid { grid-template-columns: repeat(2, 1fr); } }
 .review-card { background: rgba(242,237,221,0.06); border: 1px solid rgba(242,237,221,0.2); border-radius: var(--radius); padding: 2rem 1.8rem; }
 .review-card blockquote { margin: 0 0 1rem; font-size: 1.05rem; line-height: 1.5; }
-.review-card cite { font-style: normal; font-weight: 700; font-size: 0.85rem; color: var(--cutgrass); }
+.review-card cite { font-style: normal; font-weight: 700; font-size: 0.85rem; color: var(--bark); }
 
 /* ---------- About ---------- */
 .about-copy p { max-width: 60ch; margin: 1.1rem 0; }
@@ -148,7 +152,7 @@ h2.section-title { font-size: var(--fs-h2); }
 .contact-layout { display: grid; gap: 2.5rem; grid-template-columns: 1fr; margin-top: 1rem; }
 @media (min-width: 900px) { .contact-layout { grid-template-columns: 0.8fr 1.2fr; } }
 .contact-direct div { margin-bottom: 1.6rem; }
-.contact-direct__label { display: block; font-size: 0.78rem; font-weight: 800; letter-spacing: 0.08em; text-transform: uppercase; color: var(--cutgrass); margin-bottom: 0.3rem; }
+.contact-direct__label { display: block; font-size: 0.78rem; font-weight: 800; letter-spacing: 0.08em; text-transform: uppercase; color: var(--bark); margin-bottom: 0.3rem; }
 .contact-direct span { font-family: var(--font-display); font-size: 1.3rem; }
 .contact-form { display: grid; gap: 1.1rem; }
 .form-row { display: grid; gap: 1.1rem; grid-template-columns: 1fr; }

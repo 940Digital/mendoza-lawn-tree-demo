@@ -42,6 +42,8 @@ Per the brief: "modify or remove... depending on what fits each identity; don't 
 
 All real stock (Unsplash) — a matched set from what appears to be one photoshoot of a live-oak tree crew (visually consistent with a Texas canopy), plus a real manicured-lawn shot. No AI-generated imagery.
 
+**Re-checked 2026-07-30:** actively searched for Mendoza's own real photos (Facebook page — blocked without login, Birdeye — profile is unclaimed with only a generic stock cover image and no photo gallery). Genuinely nothing usable found this time, unlike the Opulence build in this same batch where real photos existed and weren't checked hard enough initially.
+
 ## 7. Flag for Owen
 
 Two things worth checking before outreach:
