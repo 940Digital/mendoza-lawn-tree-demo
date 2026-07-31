@@ -45,10 +45,12 @@ h2.section-title { font-size: var(--fs-h2); }
   text-transform: uppercase; color: var(--bark); margin-bottom: 1rem;
 }
 .section--dark .eyebrow { color: var(--cutgrass); }
-/* Transparent panels sit directly over the green canopy photo, where
-   --cutgrass green text blended into the image in places — switched
-   to bark (warm brown) here since it reads against green foliage. */
+/* Solid cream panels: bark brown reads fine against --clearing. */
 .fixed-panel .eyebrow { color: var(--bark); }
+/* Transparent panels sit directly over the dark, busy canopy photo —
+   both --cutgrass green and --bark brown blended into the image in
+   places, so those get the bright clearing cream instead. */
+.fixed-panel:not(.fixed-panel--solid) .eyebrow { color: var(--clearing); }
 
 .btn {
   display: inline-flex; align-items: center; gap: 0.5rem;
