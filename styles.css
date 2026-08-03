@@ -50,8 +50,9 @@ h2.section-title { font-size: var(--fs-h2); }
 .fixed-panel .eyebrow { color: var(--bark); }
 /* Transparent panels sit directly over the dark, busy canopy photo —
    both --cutgrass green and --bark brown blended into the image in
-   places, so those get the bright clearing cream instead. */
-.fixed-panel:not(.fixed-panel--solid) .eyebrow { color: var(--clearing); }
+   places, so those get the light brown instead, matching the other
+   --bark accents over the same photo. */
+.fixed-panel:not(.fixed-panel--solid) .eyebrow { color: var(--bark-light); }
 /* Same problem hits every other --bark accent that sits directly over the photo
    (tree spec markers, review bylines, process step numbers, contact labels) —
    lighten those to --bark-light instead of the full-cream swap used above. */
