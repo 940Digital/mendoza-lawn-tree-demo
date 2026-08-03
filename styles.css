@@ -4,6 +4,7 @@
   --ink: #14201A;
   --cutgrass: #5B7A3A;
   --bark: #8A5A36;
+  --bark-light: #D9B98C;
   --moss: #7A8770;
 
   --font-display: 'Bitter', serif;
@@ -51,6 +52,13 @@ h2.section-title { font-size: var(--fs-h2); }
    both --cutgrass green and --bark brown blended into the image in
    places, so those get the bright clearing cream instead. */
 .fixed-panel:not(.fixed-panel--solid) .eyebrow { color: var(--clearing); }
+/* Same problem hits every other --bark accent that sits directly over the photo
+   (tree spec markers, review bylines, process step numbers, contact labels) —
+   lighten those to --bark-light instead of the full-cream swap used above. */
+.fixed-panel:not(.fixed-panel--solid) .spec-list li::before,
+.fixed-panel:not(.fixed-panel--solid) .review-card cite,
+.fixed-panel:not(.fixed-panel--solid) .process-step b,
+.fixed-panel:not(.fixed-panel--solid) .contact-direct__label { color: var(--bark-light); }
 
 .btn {
   display: inline-flex; align-items: center; gap: 0.5rem;
