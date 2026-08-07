@@ -3,11 +3,11 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Leaf & Debris Cleanup — Mendoza Lawn & Tree Service | Denton, TX</title>
-<meta name="description" content="Seasonal leaf and debris cleanup in Denton, TX so the yard doesn't disappear under leaves.">
+<title>Contact — Mendoza Lawn & Tree Service | Denton, TX</title>
+<meta name="description" content="Get a free estimate from Mendoza Lawn & Tree Service in Denton, TX. Visit 1114 Hopkins Dr or send the form.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Bitter:wght@600;700&family=Nunito+Sans:wght@400;600;700;800&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Bitter:wght@600;700&family=Nunito+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 <link rel="icon" type="image/x-icon" href="favicon.ico">
 <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
 <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
@@ -46,57 +46,56 @@
 <div class="parallax-scroll">
 
   <section class="hero wrap" style="padding-bottom:2rem;">
-    <span class="eyebrow"><a href="services.html" style="color:inherit;">Services</a> / Cleanup</span>
-    <h1 style="font-size:clamp(2.2rem, 5vw, 3.6rem); max-width:15ch;">Leaf &amp; Debris Cleanup</h1>
-    <p class="hero__dek">Seasonal cleanup so the yard doesn't disappear under leaves — cleared and hauled off, not just blown into a pile at the property line.</p>
-    <div class="hero__actions">
-      <a href="contact.html" class="btn btn--primary">Get a Free Estimate</a>
-    </div>
+    <span class="eyebrow">Get a Free Estimate</span>
+    <h1 style="font-size:clamp(2.2rem, 5vw, 3.6rem); max-width:16ch;">Tell us what needs doing.</h1>
   </section>
 
-  <section class="fixed-panel fixed-panel--solid" id="details" data-pole-label="Details">
+  <section class="fixed-panel fixed-panel--solid">
     <div class="wrap">
-      <span class="eyebrow">What's Included</span>
-      <h2 class="section-title">Done right, cleaned up after.</h2>
-      <ul class="spec-list">
-        <li>Leaf clearing &amp; removal</li>
-        <li>Seasonal debris cleanup</li>
-        <li>Hauled off the property</li>
-        <li>One-time or scheduled seasonal visits</li>
-      </ul>
-      <div class="feature-media">
-        <img src="https://images.unsplash.com/photo-1764969370921-7c8df49171cd?fm=jpg&q=75&w=1200&auto=format&fit=crop" alt="A manicured lawn with fresh mowing stripes bordered by trees">
-      </div>
-    </div>
-  </section>
-
-  <section class="fixed-panel" id="process" data-pole-label="Process">
-    <div class="wrap">
-      <span class="eyebrow">How It Works</span>
-      <h2 class="section-title">Three steps, fast turnaround.</h2>
-      <div class="process-grid">
-        <div class="process-step"><b>01</b><h3 style="font-size:1.05rem;">Call or send the form</h3><p>Tell us what needs doing.</p></div>
-        <div class="process-step"><b>02</b><h3 style="font-size:1.05rem;">Fast estimate</h3><p>We look at the job and give you a real number, quickly.</p></div>
-        <div class="process-step"><b>03</b><h3 style="font-size:1.05rem;">Clean finish</h3><p>Debris hauled, yard cleaned up — not left for you to deal with.</p></div>
-      </div>
-    </div>
-  </section>
-
-  <section class="fixed-panel fixed-panel--solid" id="contact-cta" data-pole-label="Contact">
-    <div class="wrap">
-      <span class="eyebrow">Get a Free Estimate</span>
-      <h2 class="section-title">Tell us what needs doing.</h2>
-      <div class="contact-direct">
-        <div>
-          <span class="contact-direct__label">Location</span>
-          <span>1114 Hopkins Dr, Denton, TX 76205</span>
+      <div class="contact-layout">
+        <div class="contact-direct">
+          <div>
+            <span class="contact-direct__label">Location</span>
+            <span>1114 Hopkins Dr, Denton, TX 76205</span>
+          </div>
+          <div>
+            <span class="contact-direct__label">Hours</span>
+            <span style="font-family:var(--font-body); font-weight:700; font-size:1rem;">Mon–Fri, 9am–6pm</span>
+          </div>
+          <div>
+            <span class="contact-direct__label">Service Area</span>
+            <span style="font-family:var(--font-body); font-weight:700; font-size:1rem;">Denton, Corinth, Argyle, Lake Dallas</span>
+          </div>
         </div>
-        <div>
-          <span class="contact-direct__label">Hours</span>
-          <span style="font-family:var(--font-body); font-weight:700; font-size:1rem;">Mon–Fri, 9am–6pm</span>
-        </div>
+        <form class="contact-form" id="contactForm" novalidate>
+          <div class="form-row">
+            <div class="field">
+              <label for="name">Name</label>
+              <input type="text" id="name" name="name" required autocomplete="name">
+            </div>
+            <div class="field">
+              <label for="phone">Phone or email</label>
+              <input type="text" id="phone" name="phone" required autocomplete="tel">
+            </div>
+          </div>
+          <div class="field">
+            <label for="jobtype">What do you need?</label>
+            <select id="jobtype" name="jobtype">
+              <option>Tree removal</option>
+              <option>Stump grinding</option>
+              <option>Lawn mowing / maintenance</option>
+              <option>Leaf / debris cleanup</option>
+              <option>Not sure yet</option>
+            </select>
+          </div>
+          <div class="field">
+            <label for="message">Details</label>
+            <textarea id="message" name="message" rows="4"></textarea>
+          </div>
+          <button type="submit" class="btn btn--primary">Send It</button>
+          <p class="form-status" id="formStatus" role="status" aria-live="polite"></p>
+        </form>
       </div>
-      <a href="contact.html" class="btn btn--primary" style="margin-top:1rem;">Get a Free Estimate</a>
     </div>
   </section>
 
